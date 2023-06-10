@@ -1,0 +1,151 @@
+/* styles.css */
+
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Hero Section */
+  
+  .hero-section {
+    background-image: url("hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  /* topic navigation section  */
+  .topic-button{
+    width:105px;
+  }
+  
+  /* News Section */
+  
+  .news-section {
+    padding: 40px;
+  }
+  
+  .news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .news-item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .news-item h3 {
+    margin-top: 10px;
+  }
+  
+  .news-item p {
+    color: #555;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (min-width: 768px) {
+    header {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .hero-section {
+      height: 300px;
+    }
+  
+    .news-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  
+    .news-item {
+      width: 30%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .news-item {
+      width: 24%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .news-item {
+      width: 20%;
+    }
+  }
+  
